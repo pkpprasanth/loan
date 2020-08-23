@@ -1,0 +1,163 @@
+<html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+
+body {
+  margin: 0;
+}
+input{
+  border-radius: 10px;
+  color: #022;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: yellow;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: grey;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+form{
+
+  color:#099;
+  margin-left:7%;
+  font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <br>
+  <li><a href="apply.html">Apply Gold</a></li>
+  <br><li><a href="login.html">Login</a>
+</ul>
+
+<div style="margin-left:10%;padding:1px 16px;height:1000px;">
+<div id="Home">
+    
+
+  </div>
+  
+
+      <div id="apply">
+         <div style="color:orange;font-size:20px;">  Apply Loan</div>
+      <br>
+<font size="5px">Register gold loan</font><br>
+<br><div class="container" >
+<form method="POST" action="applybackend.jsp">
+
+  <table class="table table-hover">
+    <tr>
+      <th><label>Name :</label></th>
+      <td></td>
+      <th><input type="text" name="name" required><br><br><br></th>
+      
+    </tr>
+    <tr>
+      <th><label>Building No. :</label></th><td></td>
+      <th><input type="text" name="addNo"required ><br><br><br></th>
+      
+    </tr>
+  <tr>
+    <th><label>Area/Locality :</label></th><td></td>
+    <th><input type="text" required  name="area"><br><br><br></th>
+    
+  </tr>
+  <tr>
+    <th><label>Street Name :</label></th><td></td>
+    <th><input type="text" required  name="street"><br><br><br></th>
+    
+  </tr>
+  <tr>
+    <th><label>Pincode :</label></th><td></td>
+    <th><input type="text" required  name="pin"><br><br><br></th>
+    
+  </tr>
+  <tr>
+    <th><label>District :</label></th><td></td>
+    <th><input type="text" required name="disc"><br><br><br></th>
+    
+  </tr>
+  <tr>
+    <th><label>Phone No :</label></th>
+
+  <td></td>
+    <th><input type="text" required name="phn" minlength="12" maxlength="12"><br><br><br></th>
+  
+  </tr>
+  <tr>
+    <th><label>Gold (in gram) :</th>
+    <td></td>
+    <th><input type="text" required name="gram"><br><br><br></th>
+    
+  </tr>
+  <tr>
+    <th><label>Carat   :</label></th>
+    <td></td>
+    <th><select id="carat" required name="carat"> 
+  <option value="22k">22k</option>
+  <option value="24k">24k</option>
+  
+</select><br><br><br></th>
+    
+  </tr>
+  <tr>
+    <th><label>Email :</label></th>
+    <td></td>
+    <th><input type="email" required name="email"><br><br><br></th>
+    
+  </tr>
+  <tr>
+    <th><label>Aadhar No. : </label></th>
+    <td></td>
+    <th><input type="text"required minlength="12" maxlength="12"  name="password"><br><br></th>
+    
+  </tr>
+  <tr>
+    <th><label>Re-type Aadhar No. : </label></th>
+    <td></td>
+    <th><input type="text"required minlength="12" maxlength="12"  name="password2"><br><br></th>
+    
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td><input class="btn btn-warning" type="submit"></td>
+  </tr>
+ * Terms and Conditions apply
+</table>
+
+  </form></div>
+<BR>
+  <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+  </div>
+  
+</body>
+</html>
+
